@@ -27,6 +27,28 @@ Recommendation:
 - Action: Increase the number of customers using automatic payments by 5% each year.
 - Result: Automatic payments help ensure bills are paid on time, reducing the chances of customers leaving due to payment issues.
 
+
+Steps Taken, Visuals Used, and DAX Queries
+
+Steps Taken
+Data Collection: Gathered data including their demographics, account information, services used, and churn status.
+Data Cleaning: Cleaned the data to ensure accuracy, such as handling missing values and correcting inconsistencies.
+Data Analysis: Analyzed the data to find key trends and patterns related to customer churn.
+Dashboard Creation: Created dashboards in Power BI to visualize the data and make insights easily understandable.
+
+Visuals Used
+Pie Charts: For gender distribution, payment methods, and contract types.
+Bar Charts: For monthly and total charges, number of tech and admin tickets.
+Line Charts: To show churn rates over time and by different services.
+Tables: To display detailed customer information and summary statistics.
+
+DAX Queries
+Sum of Monthly Charges: SUM('Customer Data'[MonthlyCharges])
+Average Monthly Charges: AVERAGE('Customer Data'[MonthlyCharges])
+Churn Rate Calculation: CALCULATE(DIVIDE(COUNTROWS(FILTER('Customer Data', 'Customer Data'[Churn] = "Yes")), COUNTROWS('Customer Data')), 0)
+Count of Tech Tickets: SUM('Customer Data'[numTechTickets])
+Count of Admin Tickets: SUM('Customer Data'[numAdminTickets])
+
  Churn Dashboard Summary
 
  Customer Overview
