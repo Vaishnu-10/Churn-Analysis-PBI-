@@ -48,6 +48,7 @@ Average Monthly Charges: AVERAGE('Customer Data'[MonthlyCharges])
 Churn Rate Calculation: CALCULATE(DIVIDE(COUNTROWS(FILTER('Customer Data', 'Customer Data'[Churn] = "Yes")), COUNTROWS('Customer Data')), 0)
 Count of Tech Tickets: SUM('Customer Data'[numTechTickets])
 Count of Admin Tickets: SUM('Customer Data'[numAdminTickets])
+Dax to get the % of billing type,online backup, online security, yes, no, etc.
 
  Churn Dashboard Summary
 
